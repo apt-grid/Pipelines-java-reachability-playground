@@ -10,7 +10,7 @@
 # For more examples, including how to limit scans to only high-severity issues
 # and fail PR checks, see https://github.com/snyk/actions/
 
-name: Snyk Infrastructure as Code
+name: Example-Snyk Infrastructure as Code
 
 on:
   push:
@@ -18,11 +18,11 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "master" ]
-  schedule:
-    - cron: '15 22 * * 4'
+  #schedule:
+  #  - cron: '15 22 * * 4'
 
-permissions:
-  contents: read
+#permissions:
+ # contents: read
 
 jobs:
   snyk:
